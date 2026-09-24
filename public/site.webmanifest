@@ -1,0 +1,18 @@
+{
+  "name": "Recibo Livre",
+  "short_name": "Recibo Livre",
+  "description": "Gere recibos de pagamento em PDF ou PNG no navegador. Nada sobe para servidor.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F766E",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

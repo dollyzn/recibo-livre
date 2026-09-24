@@ -2,6 +2,8 @@
 
 Gere recibos de pagamento em PDF a partir de um comprovante ou preenchendo os dados na mão. Tudo roda no navegador: comprovante, documentos e valores não sobem para servidor.
 
+**Demo:** [dollyzn.github.io/recibo-livre](https://dollyzn.github.io/recibo-livre/)
+
 ## O que faz
 
 1. Você envia um comprovante em PDF.
@@ -15,7 +17,7 @@ O formulário manual cobre qualquer pagamento, com um ou mais serviços/produtos
 
 Next.js 16, React 19, Tailwind 4, shadcn/ui, Magic UI, pdf.js, SnapDOM e jsPDF.
 
-Um projeto de [Natã Santos](https://nsantos.dev). Código no [GitHub](https://github.com/dollyzn).
+Um projeto de [Natã Santos](https://nsantos.dev). Código no [GitHub](https://github.com/dollyzn/recibo-livre).
 
 ## Desenvolvimento
 
@@ -31,6 +33,12 @@ Abra [http://localhost:3000](http://localhost:3000). O gerador fica em `/gerar`.
 ```bash
 pnpm test
 pnpm build
+```
+
+Para gerar o export estático como no GitHub Pages:
+
+```bash
+GITHUB_PAGES=true NEXT_PUBLIC_SITE_URL=https://dollyzn.github.io/recibo-livre pnpm build
 ```
 
 O worker do pdf.js é copiado para `public/` no `pnpm install`.

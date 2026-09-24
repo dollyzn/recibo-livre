@@ -4,7 +4,21 @@ import { ReceiptGenerator } from "@/components/receipt-generator";
 export const metadata: Metadata = {
   title: "Gerar recibo",
   description:
-    "Envie um comprovante ou preencha os dados e baixe um recibo em PDF.",
+    "Envie um comprovante em PDF ou preencha os dados na mão e baixe o recibo em PDF ou PNG. Processamento 100% no navegador.",
+  alternates: {
+    canonical: "/gerar",
+  },
+  openGraph: {
+    title: "Gerar recibo · Recibo Livre",
+    description:
+      "Envie um comprovante ou preencha os dados e baixe um recibo em PDF ou PNG, sem enviar nada para servidor.",
+    url: "/gerar",
+  },
+  twitter: {
+    title: "Gerar recibo · Recibo Livre",
+    description:
+      "Envie um comprovante ou preencha os dados e baixe um recibo em PDF ou PNG, sem enviar nada para servidor.",
+  },
 };
 
 export default function GeneratePage() {
